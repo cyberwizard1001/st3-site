@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
 
-  "homepage": "https://cyberwizard1001.github.io/st3-website",
+  "homepage": "https://cyberwizard1001.github.io/st3-site",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

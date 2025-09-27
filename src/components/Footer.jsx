@@ -39,12 +39,23 @@ const FooterTitle = styled.h3`
 `;
 
 const FooterLogo = styled.div`
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-family: 'Orbitron', 'Courier New', monospace;
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #22c55e;
   margin-bottom: 1rem;
-  letter-spacing: -0.5px;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: baseline;
+  
+  .superscript {
+    font-size: 1.5rem;
+    vertical-align: super;
+    line-height: 0;
+    margin-left: -2px;
+    font-weight: 700;
+    transform: translateY(-6px);
+  }
 `;
 
 const FooterDescription = styled.p`
@@ -157,10 +168,12 @@ export default function Footer() {
       <FooterContent>
         {/* Brand Section */}
         <FooterSection>
-          <FooterLogo>ST3</FooterLogo>
+          <FooterLogo>
+            ST<span className="superscript">³</span>
+          </FooterLogo>
           <FooterDescription>
             Transforming lives through personalized education and career development. 
-            Join thousands of learners who have unlocked their potential with ST3.
+            Join thousands of learners who have unlocked their potential with ST³.
           </FooterDescription>
           
           <SocialLinks>
@@ -246,7 +259,7 @@ export default function Footer() {
       </FooterContent>
       
       <FooterBottom>
-        <p>© 2024 ST3 - Success Through Training & Transformation. All rights reserved.</p>
+        <p>© 2024 ST³ - Success Through Training & Transformation. All rights reserved.</p>
       </FooterBottom>
     </FooterContainer>
   );

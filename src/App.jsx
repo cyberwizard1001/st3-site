@@ -4,7 +4,7 @@ import styled from "styled-components";
 import GlobalStyle from "./GlobalStyle";
 import LandingPage from "./pages/LandingPage";
 import About from "./pages/About";
-import WhyST3 from "./pages/WhyST3";
+import WhyST3 from "./pages/WhyST3"; // Why ST³
 import Services from "./pages/Services";
 import Courses from "./pages/Courses";
 import Contact from "./pages/Contact";
@@ -26,13 +26,24 @@ const Nav = styled.nav`
 `;
 
 const Logo = styled.div`
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.75rem;
   color: #1a7b3a;
   margin-left: 3rem;
-  letter-spacing: -0.5px;
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  letter-spacing: 1px;
+  font-family: 'Orbitron', 'Courier New', monospace;
   position: relative;
+  display: flex;
+  align-items: baseline;
+  
+  .superscript {
+    font-size: 1.2rem;
+    vertical-align: super;
+    line-height: 0;
+    margin-left: -2px;
+    font-weight: 700;
+    transform: translateY(-4px);
+  }
   
   &::after {
     content: '';
@@ -103,7 +114,9 @@ export default function App() {
       <GlobalStyle />
       <AppContainer>
         <Nav>
-          <Logo>ST3</Logo>
+        <Logo>
+          ST<span className="superscript">³</span>
+        </Logo>
           <NavLinks>
             <Link to="/">Home</Link>
             <Link to="/contact">Contact</Link>

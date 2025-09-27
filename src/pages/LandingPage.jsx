@@ -137,7 +137,7 @@ export default function LandingPage() {
               fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif",
             }}
           >
-            Unlock your potential with ST3 – expert-led courses, personalized
+            Unlock your potential with ST³ – expert-led courses, personalized
             transformation, and career-focused skill-building that drives real results.
           </p>
           
@@ -575,7 +575,7 @@ export default function LandingPage() {
                 letterSpacing: "-1px",
               }}
             >
-              Why ST3?
+              Why ST³?
             </h2>
             
             <div

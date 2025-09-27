@@ -24,7 +24,7 @@ export default function LandingPage() {
         lineHeight: 1.6,
         width: "100%",
         maxWidth: "100vw",
-        overflow: "hidden",
+        overflowX: "hidden",
       }}
     >
       {/* HERO/INTRO */}

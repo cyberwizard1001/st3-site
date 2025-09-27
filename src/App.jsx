@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import styled from "styled-components";
 import GlobalStyle from "./GlobalStyle";
 import LandingPage from "./pages/LandingPage";
-import Home from "./pages/Home";
 import About from "./pages/About";
 import WhyST3 from "./pages/WhyST3";
 import Services from "./pages/Services";
@@ -57,7 +56,7 @@ const Main = styled.main`
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/st3-site">
       <GlobalStyle />
       <Nav>
         <Logo>ST3</Logo>
